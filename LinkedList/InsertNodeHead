@@ -1,0 +1,14 @@
+Node Insert(Node head,int x) {
+    Node n = new Node();
+    if(head==null){
+    n.data = x;
+    n.next = null;
+        head = n;
+    return head;
+    } else{
+        Node temp = head;
+        n.data = x;
+        n.next = head;
+        return n;
+    }
+}
